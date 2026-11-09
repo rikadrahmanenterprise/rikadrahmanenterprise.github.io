@@ -1,0 +1,43 @@
+{
+  "brand": "RIKAD RAHMAN ENTERPRISE",
+  "tagline": "Experience \u00b7 Technology \u00b7 Resources",
+  "currency": "BDT",
+  "items": [
+    {
+      "id": "sample-software",
+      "title": "Software Collection",
+      "category": "Software",
+      "platform": "Windows / macOS / Linux",
+      "version": "Add version",
+      "size": "Add size",
+      "description": "Replace this sample entry with a real software package and verified release information.",
+      "path": "software/example-installer.zip",
+      "access": "public",
+      "featured": true
+    },
+    {
+      "id": "sample-game",
+      "title": "Game Downloads",
+      "category": "Games",
+      "platform": "Windows",
+      "version": "Add version",
+      "size": "Add size",
+      "description": "Add game files that you have the right to distribute, plus installation notes and checksums.",
+      "path": "games/example-game.zip",
+      "access": "public",
+      "featured": true
+    },
+    {
+      "id": "sample-dev",
+      "title": "Developer Toolkit",
+      "category": "Development",
+      "platform": "Windows / macOS / Linux",
+      "version": "Add version",
+      "size": "Add size",
+      "description": "SDKs, editors, utilities, source archives and other development resources.",
+      "path": "development/example-tool.zip",
+      "access": "public",
+      "featured": false
+    }
+  ]
+}
