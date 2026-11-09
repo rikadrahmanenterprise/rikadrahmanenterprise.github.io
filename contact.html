@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<meta name="description" content="Contact Rikad Rahman, Software Developer — Mirpur, Dhaka, Bangladesh.">
+<title>Contact | Rikad Rahman</title>
+<style>
+:root{--bg:#0b1220;--panel:#111c2e;--panel2:#16243a;--text:#edf3fb;--muted:#a8b7cb;--line:#26364d;--accent:#67d5c1;--accent2:#8ab8ff;--radius:22px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 85% -10%,#1d3a56 0%,transparent 60%),var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{width:min(1040px,calc(100% - 32px));margin:auto;padding:38px 0 54px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}.brand{font-weight:750;letter-spacing:.02em}.back{color:var(--muted);font-size:.92rem}.hero{display:grid;grid-template-columns:1.5fr .8fr;gap:20px;align-items:stretch}
+.card{background:linear-gradient(145deg,rgba(22,36,58,.97),rgba(15,26,43,.97));border:1px solid var(--line);border-radius:var(--radius);padding:clamp(22px,4vw,38px);box-shadow:0 18px 55px #0003}
+.eyebrow{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
+h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;margin:12px 0 10px}
+.role{font-size:1.16rem;color:var(--muted);margin:0 0 22px}.intro{max-width:58ch;color:#c4d0df}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 16px;border-radius:13px;border:1px solid var(--line);background:#1b2b42;font-weight:700}.btn.primary{background:var(--accent);color:#09201d;border-color:transparent}.btn:hover,.item:hover{transform:translateY(-2px);border-color:#6485a7}
+.qrbox{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.qrbox img{width:180px;height:180px;background:white;padding:9px;border-radius:14px}.qrbox p{color:var(--muted);font-size:.9rem;margin:14px 0 0}
+.section{margin-top:20px}.section h2{font-size:1.05rem;margin:0 0 14px;letter-spacing:.01em}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.item{display:flex;gap:14px;align-items:center;min-width:0;padding:16px;background:#111d30;border:1px solid var(--line);border-radius:16px;transition:.18s}
+.ico{width:42px;height:42px;flex:0 0 42px;border-radius:13px;background:#20364b;color:var(--accent);display:grid;place-items:center;font-size:1.15rem;font-weight:800}
+.item small{display:block;color:var(--muted);font-size:.78rem}.item strong{display:block;overflow-wrap:anywhere;font-size:.98rem}
+.address{display:flex;justify-content:space-between;align-items:center;gap:18px}.address p{margin:4px 0 0;color:var(--muted)}
+.note{color:var(--muted);font-size:.88rem;margin-top:24px}.footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.qrbox{min-height:250px}.grid{grid-template-columns:1fr}.address{align-items:flex-start;flex-direction:column}.wrap{padding-top:22px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="top"><a class="brand" id="brand" href="/">RIKAD RAHMAN</a><a class="back" href="./">← Official website</a></header>
+  <section class="hero">
+    <div class="card">
+      <div class="eyebrow">Contact hub</div>
+      <h1 id="name">Rikad Rahman</h1>
+      <p class="role" id="role">Software Developer</p>
+      <p class="intro" id="intro">For professional inquiries, project discussions, or an in-person visit, use any of the contact options below. Please contact me before visiting to confirm availability.</p>
+      <div class="actions">
+        <a class="btn primary" id="callBtn" href="#">☎ Call</a>
+        <a class="btn" id="waBtn" href="#" target="_blank" rel="noopener">◉ WhatsApp</a>
+        <a class="btn" id="mailBtn" href="#">✉ Email</a>
+      </div>
+    </div>
+    <aside class="card qrbox">
+      <img id="qr" alt="QR code for this contact page">
+      <strong>Scan to save my contact</strong>
+      <p>Open this page on your phone, then download the vCard.</p>
+      <a class="btn" id="vcardBtn" href="#">↓ Download vCard</a>
+    </aside>
+  </section>
+
+  <section class="section card">
+    <h2>Direct contact</h2>
+    <div class="grid" id="contactGrid"></div>
+  </section>
+
+  <section class="section card">
+    <div class="address">
+      <div>
+        <h2>Office / Meeting location</h2>
+        <strong id="address"></strong>
+        <p id="visitNote">Please call or message before visiting to confirm availability.</p>
+      </div>
+      <div class="actions" style="margin:0">
+        <a class="btn primary" id="mapBtn" target="_blank" rel="noopener">Open Google Maps ↗</a>
+        <a class="btn" id="directionsBtn" target="_blank" rel="noopener">Get directions ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section card">
+    <h2>Professional & social profiles</h2>
+    <div class="grid" id="socialGrid"></div>
+  </section>
+  <p class="note" id="availability">For an in-person visit, please arrange a time in advance.</p>
+  <footer class="footer"><span>© <span id="year"></span> Rikad Rahman Enterprise</span><span><a href="https://rikadrahman.github.io/">Personal website ↗</a> · Dhaka, Bangladesh</span></footer>
+</main>
+<script>
+/*
+  EDITABLE CONTACT SETTINGS
+  Update values here only. Leave a value as "" to hide that optional item.
+  LinkedIn, working hours, appointment link and extra links can be added later.
+*/
+const CONTACT = {
+  name: "Rikad Rahman",
+  role: "Software Developer",
+  intro: "For professional inquiries, project discussions, or an in-person visit, use any of the contact options below. Please contact me before visiting to confirm availability.",
+  phoneDisplay: "+880 1670-600377",
+  phoneE164: "+8801670600377",
+  whatsapp: "8801670600377",
+  email: "rikadrahman@yahoo.com",
+  address: "468/1 South Monipur, Mirpur, Dhaka 1216, Bangladesh",
+  mapShareUrl: "https://share.google/OPeEVGfqfWz7hKiJV",
+  github: "https://github.com/rikadrahman",
+  facebook: "https://facebook.com/RikadRahaman",
+  linkedin: "",              // Add LinkedIn URL later
+  website: "https://rikadrahmanenterprise.eu.org",
+  availability: "For an in-person visit, please arrange a time in advance.",
+  visitNote: "Please call or message before visiting to confirm availability.",
+  extraLinks: [
+    { label: "Personal website", url: "https://rikadrahman.github.io", icon: "↗" }
+  ]
+};
+
+const $ = id => document.getElementById(id);
+$("name").textContent = CONTACT.name;
+$("brand").textContent = CONTACT.name.toUpperCase();
+$("role").textContent = CONTACT.role;
+$("intro").textContent = CONTACT.intro;
+$("address").textContent = CONTACT.address;
+$("availability").textContent = CONTACT.availability;
+$("visitNote").textContent = CONTACT.visitNote;
+$("year").textContent = new Date().getFullYear();
+
+$("callBtn").href = "tel:" + CONTACT.phoneE164;
+$("waBtn").href = "https://wa.me/" + CONTACT.whatsapp;
+$("mailBtn").href = "mailto:" + CONTACT.email;
+$("mapBtn").href = CONTACT.mapShareUrl;
+$("directionsBtn").href = "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(CONTACT.address);
+
+const contactItems = [
+  ["☎","Phone",CONTACT.phoneDisplay,"tel:"+CONTACT.phoneE164],
+  ["◉","WhatsApp","Message on WhatsApp","https://wa.me/"+CONTACT.whatsapp],
+  ["✉","Email",CONTACT.email,"mailto:"+CONTACT.email]
+];
+$("contactGrid").innerHTML = contactItems.map(([i,l,v,u]) =>
+  `<a class="item" href="${u}" target="${u.startsWith("http")?"_blank":"_self"}" rel="noopener"><span class="ico">${i}</span><span><small>${l}</small><strong>${v}</strong></span></a>`
+).join("");
+
+const socials = [
+  ["GH","GitHub","github.com/rikadrahman",CONTACT.github],
+  ["f","Facebook","facebook.com/RikadRahaman",CONTACT.facebook],
+  ["in","LinkedIn",CONTACT.linkedin ? CONTACT.linkedin.replace(/^https?:\/\//,"") : "Add profile URL later",CONTACT.linkedin],
+  ["↗","Website","rikadrahman.github.io",CONTACT.website],
+  ...CONTACT.extraLinks.map(x=>[x.icon||"↗",x.label,x.url,x.url])
+].filter(x=>x[3]);
+$("socialGrid").innerHTML = socials.map(([i,l,v,u]) =>
+  `<a class="item" href="${u}" target="_blank" rel="noopener"><span class="ico">${i}</span><span><small>${l}</small><strong>${v}</strong></span></a>`
+).join("");
+
+const vcard = [
+"BEGIN:VCARD","VERSION:3.0",
+"FN:"+CONTACT.name,
+"TITLE:"+CONTACT.role,
+"TEL;TYPE=CELL,VOICE:"+CONTACT.phoneE164,
+"EMAIL;TYPE=INTERNET:"+CONTACT.email,
+"ADR;TYPE=WORK:;;"+CONTACT.address.replaceAll(",","\\,")+";;;;",
+"URL:"+CONTACT.website,
+"END:VCARD"
+].join("\r\n");
+const blob = new Blob([vcard],{type:"text/vcard;charset=utf-8"});
+const vurl = URL.createObjectURL(blob);
+$("vcardBtn").href = vurl;
+$("vcardBtn").download = "Rikad-Rahman.vcf";
+
+// QR points to the live contact page. Change CONTACT.website if the domain changes.
+$("qr").src = "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=" + encodeURIComponent(CONTACT.website + "/contact.html");
+</script>
+</body>
+</html>
