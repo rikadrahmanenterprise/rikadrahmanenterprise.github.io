@@ -28,7 +28,7 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;ma
 </head>
 <body>
 <main class="wrap">
-  <header class="top"><a class="brand" id="brand" href="/">RIKAD RAHMAN</a><a class="back" href="./">← Official website</a></header>
+  <header class="top"><a class="brand" id="brand" href="/">RIKAD RAHMAN</a><a class="back" href="/">← Back to website</a></header>
   <section class="hero">
     <div class="card">
       <div class="eyebrow">Contact hub</div>
@@ -73,7 +73,7 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;ma
     <div class="grid" id="socialGrid"></div>
   </section>
   <p class="note" id="availability">For an in-person visit, please arrange a time in advance.</p>
-  <footer class="footer"><span>© <span id="year"></span> Rikad Rahman Enterprise</span><span><a href="https://rikadrahman.github.io/">Personal website ↗</a> · Dhaka, Bangladesh</span></footer>
+  <footer class="footer"><span>© <span id="year"></span> Rikad Rahman</span><span>Dhaka, Bangladesh</span></footer>
 </main>
 <script>
 /*
@@ -94,11 +94,11 @@ const CONTACT = {
   github: "https://github.com/rikadrahman",
   facebook: "https://facebook.com/RikadRahaman",
   linkedin: "",              // Add LinkedIn URL later
-  website: "https://rikadrahmanenterprise.eu.org",
+  website: "https://rikadrahmanenterprise.github.io",
   availability: "For an in-person visit, please arrange a time in advance.",
   visitNote: "Please call or message before visiting to confirm availability.",
   extraLinks: [
-    { label: "Personal website", url: "https://rikadrahman.github.io", icon: "↗" }
+    // Add later, e.g. { label: "Portfolio", url: "https://example.com", icon: "↗" }
   ]
 };
 
@@ -131,7 +131,7 @@ const socials = [
   ["GH","GitHub","github.com/rikadrahman",CONTACT.github],
   ["f","Facebook","facebook.com/RikadRahaman",CONTACT.facebook],
   ["in","LinkedIn",CONTACT.linkedin ? CONTACT.linkedin.replace(/^https?:\/\//,"") : "Add profile URL later",CONTACT.linkedin],
-  ["↗","Website","rikadrahman.github.io",CONTACT.website],
+  ["↗","Website","rikadrahmanenterprise.github.io",CONTACT.website],
   ...CONTACT.extraLinks.map(x=>[x.icon||"↗",x.label,x.url,x.url])
 ].filter(x=>x[3]);
 $("socialGrid").innerHTML = socials.map(([i,l,v,u]) =>
