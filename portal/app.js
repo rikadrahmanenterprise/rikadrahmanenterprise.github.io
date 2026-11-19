@@ -4,7 +4,8 @@ let category = "All";
 const available = new Set();
 const icons = {Software:"▣", Games:"◈", Development:"⌘"};
 const escapeHtml = (s="") => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function fileUrl(path) {
+function fileUrl(path, direct) {
+  if (direct) return direct;
   const base = (window.PORTAL_CONFIG?.downloadBaseUrl || "/downloads").replace(/\/+$/,"");
   const parts = String(path || "").split("/");
   if (!path || parts.some(p => !p || p === "." || p === "..")) return "";
@@ -39,8 +40,9 @@ async function init() {
     items = Array.isArray(data.items) ? data.items : [];
     document.title = `${data.brand || "Download Portal"} — Home`;
     await Promise.all(items.map(async item => {
-      const url = fileUrl(item.path);
+      const url = fileUrl(item.path, item.url);
       if (!url || item.access !== "public") return;
+      if (/^https?:\/\//i.test(url)) { available.add(item.id); return; }
       try {
         const check = await fetch(url,{method:"HEAD",cache:"no-store"});
         if (check.ok) available.add(item.id);
@@ -64,7 +66,7 @@ $("#items").addEventListener("click",event=>{
   const button=event.target.closest("button[data-id]");
   if(!button)return;
   const item=items.find(entry=>entry.id===button.dataset.id);
-  const url=item && fileUrl(item.path);
+  const url=item && fileUrl(item.path, item.url);
   if(url && available.has(item.id)) window.location.href=url;
 });
 init();

@@ -1,8 +1,20 @@
 {
   "brand": "RIKAD RAHMAN ENTERPRISE",
-  "tagline": "Experience \u00b7 Technology \u00b7 Resources",
+  "tagline": "Software · Games · Development",
   "currency": "BDT",
   "items": [
+    {
+      "id": "test-file",
+      "title": "Test File",
+      "category": "Software",
+      "platform": "Any device",
+      "version": "1.0",
+      "size": "19 B",
+      "description": "Small test file to confirm that downloads are working.",
+      "path": "test.txt",
+      "access": "public",
+      "featured": false
+    },
     {
       "id": "sample-software",
       "title": "Software Collection",
