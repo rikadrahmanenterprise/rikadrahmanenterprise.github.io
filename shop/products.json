@@ -1,0 +1,10 @@
+{
+  "_note": "Edit prices, names and descriptions here. price: null shows 'Ask for price'. platforms: win, mac.",
+  "items": [
+    {"id":"logic-pro","title":"Apple Logic Pro","category":"Software","platforms":["mac"],"price":1000,"currency":"BDT","description":"Music production, recording, mixing and editing for the Mac."},
+    {"id":"final-cut-pro","title":"Final Cut Pro","category":"Software","platforms":["mac"],"price":1000,"currency":"BDT","description":"Professional video editing and post-production for the Mac."},
+    {"id":"photoshop","title":"Adobe Photoshop","category":"Software","platforms":["win","mac"],"price":300,"currency":"BDT","description":"Photo editing, graphics and image manipulation. Choose Windows or macOS."},
+    {"id":"cyberpunk-2077","title":"Cyberpunk 2077","category":"Games","platforms":["win"],"price":1000,"currency":"BDT","description":"Sci-fi open-world action RPG for Windows PC."},
+    {"id":"cadillacs-dinosaurs","title":"Cadillacs and Dinosaurs (Mustafa) + Arcade Collection","category":"Games","platforms":["win"],"price":1000,"currency":"BDT","description":"A classic side-scrolling brawler together with a set of retro arcade games."}
+  ]
+}
