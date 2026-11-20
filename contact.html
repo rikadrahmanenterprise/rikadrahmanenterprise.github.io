@@ -25,8 +25,8 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;ma
 .note{color:var(--muted);font-size:.88rem;margin-top:24px}.footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;color:var(--muted);font-size:.85rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.qrbox{min-height:250px}.grid{grid-template-columns:1fr}.address{align-items:flex-start;flex-direction:column}.wrap{padding-top:22px}}
 </style>
-</head>
-<body>
+<link rel="stylesheet" href="/assets/site.css"></head>
+<body data-site="enterprise">
 <main class="wrap">
   <header class="top"><a class="brand" id="brand" href="/">RIKAD RAHMAN</a><a class="back" href="/">← Back to website</a></header>
   <section class="hero">
@@ -72,6 +72,10 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;ma
     <h2>Professional & social profiles</h2>
     <div class="grid" id="socialGrid"></div>
   </section>
+  <section class="section card"><h2>Send a request or comment</h2><p style="color:var(--muted);margin:0 0 16px">Leave your phone or email and your message — I will get back to you.</p><form id="reqForm" class="rr-form"><select name="kind"><option value="request">Request</option><option value="software">Software request</option><option value="comment">Comment</option></select>
+<input name="name" placeholder="Your name" maxlength="80" autocomplete="name"><input name="contact" placeholder="Phone or email *" required maxlength="120" autocomplete="tel">
+<textarea name="message" rows="4" placeholder="Your request or comment *" required maxlength="1500"></textarea><input class="rr-hp" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="rr-btn" type="submit">Send</button><p id="reqStatus" class="rr-status" role="status"></p></form></section><section class="section card"><h2>Websites &amp; backups</h2><div class="grid" id="sitesGrid"></div></section>
   <p class="note" id="availability">For an in-person visit, please arrange a time in advance.</p>
   <footer class="footer"><span>© <span id="year"></span> Rikad Rahman</span><span>Dhaka, Bangladesh</span></footer>
 </main>
@@ -83,7 +87,7 @@ h1{font-size:clamp(2.3rem,6vw,4.2rem);line-height:1.04;letter-spacing:-.045em;ma
 */
 const CONTACT = {
   name: "Rikad Rahman",
-  role: "Software Developer",
+  role: "Technology Specialist — Software, Audio & Video",
   intro: "For professional inquiries, project discussions, or an in-person visit, use any of the contact options below. Please contact me before visiting to confirm availability.",
   phoneDisplay: "+880 1670-600377",
   phoneE164: "+8801670600377",
@@ -131,7 +135,6 @@ const socials = [
   ["GH","GitHub","github.com/rikadrahman",CONTACT.github],
   ["f","Facebook","facebook.com/RikadRahaman",CONTACT.facebook],
   ["in","LinkedIn",CONTACT.linkedin ? CONTACT.linkedin.replace(/^https?:\/\//,"") : "Add profile URL later",CONTACT.linkedin],
-  ["↗","Website","rikadrahmanenterprise.github.io",CONTACT.website],
   ...CONTACT.extraLinks.map(x=>[x.icon||"↗",x.label,x.url,x.url])
 ].filter(x=>x[3]);
 $("socialGrid").innerHTML = socials.map(([i,l,v,u]) =>
@@ -156,5 +159,5 @@ $("vcardBtn").download = "Rikad-Rahman.vcf";
 // QR points to the live contact page. Change CONTACT.website if the domain changes.
 $("qr").src = "https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=" + encodeURIComponent(CONTACT.website + "/contact.html");
 </script>
-</body>
+<script src="/js/site.js"></script></body>
 </html>
