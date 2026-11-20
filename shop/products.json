@@ -1,10 +1,418 @@
 {
-  "_note": "Edit prices, names and descriptions here. price: null shows 'Ask for price'. platforms: win, mac.",
-  "items": [
-    {"id":"logic-pro","title":"Apple Logic Pro","category":"Software","platforms":["mac"],"price":1000,"currency":"BDT","description":"Music production, recording, mixing and editing for the Mac."},
-    {"id":"final-cut-pro","title":"Final Cut Pro","category":"Software","platforms":["mac"],"price":1000,"currency":"BDT","description":"Professional video editing and post-production for the Mac."},
-    {"id":"photoshop","title":"Adobe Photoshop","category":"Software","platforms":["win","mac"],"price":300,"currency":"BDT","description":"Photo editing, graphics and image manipulation. Choose Windows or macOS."},
-    {"id":"cyberpunk-2077","title":"Cyberpunk 2077","category":"Games","platforms":["win"],"price":1000,"currency":"BDT","description":"Sci-fi open-world action RPG for Windows PC."},
-    {"id":"cadillacs-dinosaurs","title":"Cadillacs and Dinosaurs (Mustafa) + Arcade Collection","category":"Games","platforms":["win"],"price":1000,"currency":"BDT","description":"A classic side-scrolling brawler together with a set of retro arcade games."}
-  ]
+ "_note": "Edit prices, names and descriptions here. price: null shows 'Ask for price'. platforms: win, mac.",
+ "items": [
+  {
+   "id": "macos-install",
+   "title": "Apple macOS Installation (Windows PC & Mac)",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": null,
+   "currency": "BDT",
+   "description": "Run macOS on your Windows PC (Hackintosh) or unsupported Mac to use any Mac software. Price depends on the setup."
+  },
+  {
+   "id": "final-cut-pro",
+   "title": "Apple Final Cut Pro",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Professional video editing with the magnetic timeline, background rendering and 4K export."
+  },
+  {
+   "id": "logic-pro",
+   "title": "Apple Logic Pro",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Music production, recording, mixing and editing, with all loops and Jam Packs."
+  },
+  {
+   "id": "adobe-cc",
+   "title": "Adobe Creative Cloud CC & CS Collection",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 3000,
+   "currency": "BDT",
+   "description": "Full Adobe collection: Photoshop, Illustrator, Premiere Pro, After Effects, Acrobat and more. Any single app is 300 BDT."
+  },
+  {
+   "id": "photoshop",
+   "title": "Adobe Photoshop",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Photo editing, graphics and image manipulation with Generative Fill."
+  },
+  {
+   "id": "illustrator",
+   "title": "Adobe Illustrator",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Vector graphics for logos, icons, illustrations and packaging."
+  },
+  {
+   "id": "premiere-pro",
+   "title": "Adobe Premiere Pro",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Industry-standard video editing for social videos to feature films."
+  },
+  {
+   "id": "after-effects",
+   "title": "Adobe After Effects",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Motion graphics, visual effects, compositing and animation."
+  },
+  {
+   "id": "office-2024",
+   "title": "Microsoft Office 2024",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Word, Excel, PowerPoint, Outlook and OneNote. Lifetime LTSC edition."
+  },
+  {
+   "id": "microsoft-365",
+   "title": "Microsoft 365 & Office",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 3000,
+   "currency": "BDT",
+   "description": "Lifetime Office on your registered email for Mac, Windows, iOS, Android and web, with 1TB OneDrive."
+  },
+  {
+   "id": "bijoy-ekattor-71",
+   "title": "Bijoy Ekattor 71 Bangla Software",
+   "category": "Software",
+   "platforms": [
+    "mac"
+   ],
+   "price": 2000,
+   "currency": "BDT",
+   "description": "Three Bangla typing tools in one: Bijoy Ekattor, Bijoy Classic and Bijoy Unicode. Supports all macOS versions."
+  },
+  {
+   "id": "cubase-pro",
+   "title": "Steinberg Cubase Pro",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Pro music production with HALion Sonic SE, Groove Agent SE and VST Amp Rack."
+  },
+  {
+   "id": "fl-studio",
+   "title": "Image-Line FL Studio",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 500,
+   "currency": "BDT",
+   "description": "Easy and popular music sequencer for beginners, with 3,900+ sound effects."
+  },
+  {
+   "id": "komplete-ultimate",
+   "title": "Native Instruments Komplete Ultimate Collectors Edition",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "All instruments and effects: Kontakt, Massive, Reaktor, Guitar Rig and more. Libraries cost extra."
+  },
+  {
+   "id": "auto-tune-pro",
+   "title": "Antares Auto-Tune Pro",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 500,
+   "currency": "BDT",
+   "description": "Industry-standard pitch correction with Auto Mode and Graph Mode."
+  },
+  {
+   "id": "autocad",
+   "title": "Autodesk AutoCAD",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "2D drafting and 3D modeling for architects, engineers and designers."
+  },
+  {
+   "id": "filmora",
+   "title": "Wondershare Filmora",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Simple, fun video editor with many effects and no watermark."
+  },
+  {
+   "id": "ableton-live-suite",
+   "title": "Ableton Live Suite",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Fast, flexible music creation and live performance with Max for Live."
+  },
+  {
+   "id": "camtasia",
+   "title": "TechSmith Camtasia",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "All-in-one screen recorder and video editor for tutorials and demos."
+  },
+  {
+   "id": "maya",
+   "title": "Autodesk Maya",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Professional 3D animation, modeling and effects."
+  },
+  {
+   "id": "3ds-max",
+   "title": "Autodesk 3ds Max",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "3D modeling, rendering and animation for worlds and product designs."
+  },
+  {
+   "id": "ibm-spss",
+   "title": "IBM SPSS Statistics",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Powerful statistics software for data preparation, analysis and reporting."
+  },
+  {
+   "id": "stata",
+   "title": "Stata",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Statistical software for research, econometrics and data analysis."
+  },
+  {
+   "id": "ntfs-for-mac",
+   "title": "Microsoft NTFS for Mac by Tuxera",
+   "category": "Software",
+   "platforms": [
+    "mac"
+   ],
+   "price": 500,
+   "currency": "BDT",
+   "description": "Read and write Windows NTFS drives on your Mac."
+  },
+  {
+   "id": "cleanmymac",
+   "title": "CleanMyMac",
+   "category": "Software",
+   "platforms": [
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Cleans junk and speeds up your Mac."
+  },
+  {
+   "id": "maccleaner-pro",
+   "title": "Nektony MacCleaner Pro",
+   "category": "Software",
+   "platforms": [
+    "mac"
+   ],
+   "price": 300,
+   "currency": "BDT",
+   "description": "Mac cleanup and disk space analyser with more tools than CleanMyMac."
+  },
+  {
+   "id": "stylus-rmx",
+   "title": "Spectrasonics Stylus RMX",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Groove-based virtual instrument plug-in for rhythm production."
+  },
+  {
+   "id": "omnisphere",
+   "title": "Spectrasonics Omnisphere",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Flagship synthesizer with many synthesis types in one instrument."
+  },
+  {
+   "id": "corel-draw",
+   "title": "Corel Draw",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Vector illustration, page layout, photo editing and print design."
+  },
+  {
+   "id": "waves-complete",
+   "title": "Waves Plugins Complete Bundle",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Hundreds of professional mixing and mastering plugins."
+  },
+  {
+   "id": "smartpls",
+   "title": "SmartPLS Professional",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Research software for PLS-SEM and latent variable modeling."
+  },
+  {
+   "id": "davinci-resolve",
+   "title": "Blackmagic DaVinci Resolve Studio",
+   "category": "Software",
+   "platforms": [
+    "win",
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Video editing and color grading with multi-GPU, HDR and noise reduction."
+  },
+  {
+   "id": "horos",
+   "title": "Horos DICOM Viewer",
+   "category": "Software",
+   "platforms": [
+    "mac"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Medical image (DICOM) viewer for Mac. Needs macOS 10.11 or later."
+  },
+  {
+   "id": "cyberpunk-2077",
+   "title": "Cyberpunk 2077",
+   "category": "Games",
+   "platforms": [
+    "win"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "Sci-fi open-world action RPG for Windows PC."
+  },
+  {
+   "id": "cadillacs-dinosaurs",
+   "title": "Cadillacs and Dinosaurs (Mustafa) + Arcade Collection",
+   "category": "Games",
+   "platforms": [
+    "win"
+   ],
+   "price": 1000,
+   "currency": "BDT",
+   "description": "A classic side-scrolling brawler together with a set of retro arcade games."
+  }
+ ]
 }
